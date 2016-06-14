@@ -1,0 +1,170 @@
+<html>
+
+<head>
+<title>Quiz Dion</title>
+
+<style>
+.qheader{
+font:bold 14px Arial;
+}
+
+.qselections{
+font:normal 13px Arial;
+}
+</style>
+
+<script src="quizconfig.js">
+</script>
+
+<script>
+
+/***********************************************
+* JavaScriptKit.com Multiple Choice Quiz Script (http://www.javascriptkit.com)
+* Copyright 2003 JavaScript Kit- http://www.javascriptkit.com
+* This notice and footnote must stay intact for use
+* Visit JavaScript Kit (http://www.javascriptkit.com/) for full source code
+***********************************************/
+
+var actualchoices=new Array()
+document.cookie="ready=yes"
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<!--Comments on configuring quiz script-->
+<!--Change the questions below any way you want, but make note of the following:-->
+<!--1) Perserve the <FORM> tags -->
+<!--2a) Inside each radio button, use the VALUE attribute to denote each question's choices: "a", "b", "c" etc.-->
+<!--2b) Inside each radio button, use the NAME attribute to denote which question the button belongs to ("question1", "question2" etc-->
+<!--3) Script supports unlmited # of questions. Be sure to edit .js file to enter corresponding solutions-->
+
+<p align="center">
+
+<form method="POST" name="myquiz">
+
+<div id="show-number"></div>
+
+<font face="Arial"><big><big>Football Quiz</big></big></font></p>
+
+<div class="qheader">
+1) What is the best team ever?</div>
+<div class="qselections">
+<input type="radio" value="a" name="question1">a) Giants<br>
+<input type="radio" value="b" name="question1">b) Panthers<br>
+<input type="radio" value="c" name="question1">c) 49ers<br>
+<input type="radio" value="d" name="question1">d) Bears<br>
+</div>
+
+<br>
+
+<div class="qheader">
+2) What is the worst team ever?</div>
+<div class="qselections">
+<input type="radio" value="a" name="question2">a) Eagles<br>
+<input type="radio" value="b" name="question2">b) Cowboys<br>
+<input type="radio" value="c" name="question2">c) Patroits<br>
+<input type="radio" value="d" name="question2">d) Browns<br>
+</div>
+
+<br>
+
+<div class="qheader">
+3) What team is named for Edgar Allan Poe?</div>
+<div class="qselections">
+<input type="radio" value="a" name="question3">a) Colts<br>
+<input type="radio" value="b" name="question3">b) Jaguar<br>
+<input type="radio" value="c" name="question3">c) Raiders<br>
+<input type="radio" value="d" name="question3">d) Ravens<br>
+</div>
+
+<br>
+
+<div class="qheader">
+4) What team did Steve Young play for?</div>
+<div class="qselections">
+<input type="radio" value="a" name="question4">a) 49ers<br>
+<input type="radio" value="b" name="question4">b) Saints<br>
+<input type="radio" value="c" name="question4">c) Panthers<br>
+<input type="radio" value="d" name="question4">d) Bears<br>
+</div>
+
+<br>
+
+<div class="qheader">
+5) What team has the only perfect season?</div>
+<div class="qselections">
+<input type="radio" value="a" name="question5">a) Patroits<br>
+<input type="radio" value="b" name="question5">b) Texans<br>
+<input type="radio" value="c" name="question5">c) Dolphins<br>
+<input type="radio" value="d" name="question5">d) Seahawks<br>
+</div>
+
+<br>
+
+<div class="qheader">
+6) What team sports only a sticker on one side of their helments?</div>
+<div class="qselections">
+<input type="radio" value="a" name="question6">a) Lions<br>
+<input type="radio" value="b" name="question6">b) Jets<br>
+<input type="radio" value="c" name="question6">c) Steelers<br>
+<input type="radio" value="d" name="question6">d) Dolphins<br>
+</div>
+
+<br>
+
+<div class="qheader">
+7) Who won Super Bowl 30?</div>
+<div class="qselections">
+<input type="radio" value="a" name="question7">a) 49ers<br>
+<input type="radio" value="b" name="question7">b) Cowboys<br>
+<input type="radio" value="c" name="question7">c) Raiders<br>
+<input type="radio" value="d" name="question7">d) Eagles<br>
+</div>
+
+<br>
+
+<div class="qheader">
+8) What tem plays in Cleveland?</div>
+<div class="qselections">
+<input type="radio" value="a" name="question8">a) Rams<br>
+
+<input type="radio" value="b" name="question8">b) Browns<br>
+<input type="radio" value="c" name="question8">c) Chargers<br>
+<input type="radio" value="d" name="question8">d) Bengals<br>
+</div>
+
+<br>
+
+<div class="qheader">
+9) What was the first football team to win the Super Bowl</div>
+<div class="qselections">
+<input type="radio" value="a" name="question9">a) Dallas Cowboys<br>
+<input type="radio" value="b" name="question9">b) Kansas City Chiefs<br>
+<input type="radio" value="c" name="question9">c) Green Bay Packers<br>
+<input type="radio" value="d" name="question9">d) New York Giants<br>
+</div>
+
+<br>
+
+<div class="qheader">
+10) How many American Football team are there?</div>
+<div class="qselections">
+<input type="radio" value="a" name="question10">a) 28<br>
+<input type="radio" value="b" name="question10">b) 32<br>
+<input type="radio" value="c" name="question10">c) 34<br>
+</div>
+
+</form>
+
+<form>
+
+
+<div align="center">
+<input type="button" value="Grade Me!" name="B1" onClick="gradeit()"> <input type="button" value="Reset" name="B2" onClick="document.myquiz.reset()"></div>
+</form>
+
+
+</body>
+</html>
